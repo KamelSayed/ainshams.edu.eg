@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #1a237e; /* لون جامعة عين شمس الرسمي */
+        }
+        body {
+            font-family: 'Amiri', 'Simplified Arabic', sans-serif;
+            line-height: 1.6;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 15px;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .header h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        td {
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            word-break: keep-all; /* لمنع تفكيك الكلمات */
+        }
+        .grades-table td:nth-child(2) {
+            text-align: left;
+            font-weight: bold;
+            color: #2e7d32; /* لون التقديرات */
+        }
+        .signature {
+            text-align: left;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+        .stamp {
+            color: var(--primary-color);
+            font-size: 0.85rem;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        /* تحسينات الجوّال */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+                border-radius: 8px;
+            }
+            td {
+                padding: 10px;
+                font-size: 0.85rem;
+            }
+            .header h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>جامعة عين شمس<br>كلية الآثار</h2>
+            <div class="stamp">(ختم الجامعة الإلكتروني)</div>
+        </div>
+
+        <table>
+            <tr><td>الاسم: شروق حمدي السيد احمد احمد عبد الغني</td></tr>
+            <tr><td>الفرقة: الأولى (2024-2025)</td></tr>
+            <tr><td>القسم: الآثار المصرية</td></tr>
+        </table>
+
+        <h3 style="color: var(--primary-color); margin: 15px 0;">نتيجة العام الدراسي 2024-2025</h3>
+        <h4 style="text-align: center; color: #d32f2f;">التقدير العام: جيد جدًا (3.1)</h4>
+
+        <table class="grades-table">
+            <tr><td>تاريخ مصر القديمة</td><td>B+</td></tr>
+            <tr><td>مقدمة في علم الآثار</td><td>A-</td></tr>
+            <tr><td>اللغات القديمة (اختياري)</td><td>C+</td></tr>
+            <tr><td>تكنولوجيا المسح الأثري</td><td>B</td></tr>
+            <tr><td>إدارة المواقع التراثية</td><td>B-</td></tr>
+            <tr><td>الترميم الوقائي</td><td>C</td></tr>
+        </table>
+
+        <div class="stamp">تاريخ الإصدار: ١٥ مارس ٢٠٢٥</div>
+        
+        <div class="signature">
+            <div>د. محمود السيد</div>
+            <div>رئيس قسم الآثار المصرية</div>
+            <div style="width: 120px; border-top: 1px solid #000; margin-top: 8px;"></div>
+        </div>
+    </div>
+</body>
+</html>
